@@ -1,11 +1,18 @@
 import { ProductData } from '../types';
 
+// Images located in the root directory (based on user info)
+// In a Vite environment, we can reference them directly from root if they are public,
+// or import them. Since they are user uploaded files in the root, we reference them by path.
+const bomberImg = "/bomber_calato_no.jpg";
+const enterizoImg = "/enterizo_calato_no.jpg";
+const capImg = "/conjunto_cap_calato_no.jpg";
+
 export const products: ProductData = {
   men: [
     { 
       id: 1, 
       title: "Techwear Hoodie 'Yurei'", 
-      img: "./conjunto_cap_calato_no.jpg", 
+      img: capImg, 
       fallbackImg: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=500&q=80", 
       category: "Hoodies",
       price: "S/ 189.00",
@@ -14,7 +21,7 @@ export const products: ProductData = {
     { 
       id: 2, 
       title: "Pantalón Cargo 'Ronin'", 
-      img: "./bomber_calato_no.jpg", 
+      img: bomberImg, 
       fallbackImg: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=500&q=80", 
       category: "Pantalones",
       price: "S/ 219.00",
@@ -23,7 +30,7 @@ export const products: ProductData = {
     { 
       id: 3,
       title: "Oversize Tee 'Kanji'", 
-      img: "./enterizo_calato_no.jpg", 
+      img: enterizoImg, 
       fallbackImg: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80", 
       category: "Polos",
       price: "S/ 99.00",
@@ -58,7 +65,7 @@ export const products: ProductData = {
     { 
       id: 7,
       title: "Bomber 'Sukeban' Leader", 
-      img: "./bomber_calato_no.jpg", 
+      img: bomberImg, 
       fallbackImg: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80",
       category: "Chaquetas",
       price: "S/ 199.00",
@@ -67,7 +74,7 @@ export const products: ProductData = {
     { 
       id: 8,
       title: "Enterizo 'Shadow' Ops", 
-      img: "./enterizo_calato_no.jpg", 
+      img: enterizoImg, 
       fallbackImg: "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&w=500&q=80",
       category: "Enterizos",
       price: "S/ 180.00",
@@ -76,7 +83,7 @@ export const products: ProductData = {
     { 
       id: 9,
       title: "Conjunto Cargo 'Riot'", 
-      img: "./conjunto_cap_calato_no.jpg", 
+      img: capImg, 
       fallbackImg: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80",
       category: "Conjuntos",
       price: "S/ 250.00", 
